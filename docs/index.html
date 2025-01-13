@@ -88,54 +88,151 @@
 <body>
     <header>
         <img src="蜥蜴.png" alt="蜥蜴图标"> <!-- 插入蜥蜴图片 -->
-        <h1>蜥蜴大学</h1>
-        <p>专注蜥蜴研究与教育的顶尖学府</p>
+        <h1 id="site-title">蜥蜴大学</h1>
+        <p id="site-description">专注蜥蜴研究与教育的顶尖学府</p>
     </header>
     <nav>
-        <a href="#about">学校概况</a>
-        <a href="#faculty">师资力量</a>
-        <a href="#majors">专业设置</a>
-        <a href="#research">科研成果</a>
-        <a href="#admission">招生信息</a>
-        <a href="#contact">联系我们</a>
+        <a href="#about" id="nav-about">学校概况</a>
+        <a href="#faculty" id="nav-faculty">师资力量</a>
+        <a href="#majors" id="nav-majors">专业设置</a>
+        <a href="#research" id="nav-research">科研成果</a>
+        <a href="#admission" id="nav-admission">招生信息</a>
+        <a href="#contact" id="nav-contact">联系我们</a>
+        <a href="javascript:void(0);" id="toggle-lang" style="float: right; color: white; padding: 14px 16px;">EN</a>
     </nav>
     <div class="container">
         <div class="section" id="about">
-            <h2>学校概况</h2>
-            <p>蜥蜴大学创立于1984年，作为全球蜥蜴研究与教育领域的翘楚，始终以探索蜥蜴奥秘、培育专业人才为使命。经过多年的不懈努力，学校在学术研究、人才培养、社会服务等方面取得了显著成就，成为推动蜥蜴研究领域发展的重要力量。</p>
+            <h2 id="about-title">学校概况</h2>
+            <p id="about-text">蜥蜴大学创立于1984年，作为全球蜥蜴研究与教育领域的翘楚，始终以探索蜥蜴奥秘、培育专业人才为使命。经过多年的不懈努力，学校在学术研究、人才培养、社会服务等方面取得了显著成就，成为推动蜥蜴研究领域发展的重要力量。</p>
         </div>
         <div class="section" id="faculty">
-            <h2>师资力量</h2>
+            <h2 id="faculty-title">师资力量</h2>
             <ul>
-                <li><strong>校长 - sun羊</strong>：国际知名动物学家，在蜥蜴进化研究方面成果卓著。其提出的创新性理论，改写了学界对蜥蜴进化的传统认知，多篇研究成果发表于国际顶级学术期刊。</li>
-                <li><strong>行政副校长 - 白夜</strong>：专注蜥蜴生态习性研究，长期深入各种蜥蜴栖息地，积累了海量一手数据，为蜥蜴物种的保护与生态环境的维护提供了坚实依据。</li>
-                <li><strong>教授团队</strong>：学校拥有一批在蜥蜴分子生物学、行为学等领域造诣深厚的教授，他们不仅具备扎实的学术功底，还积极投身科研项目，为学生提供丰富的教学与实践指导。</li>
+                <li><strong id="president-title">校长 - sun羊</strong>：国际知名动物学家，在蜥蜴进化研究方面成果卓著。</li>
+                <li><strong id="vp-title">行政副校长 - 白夜</strong>：专注蜥蜴生态习性研究，长期深入各种蜥蜴栖息地。</li>
+                <li><strong id="professors-title">教授团队</strong>：学校拥有一批在蜥蜴分子生物学、行为学等领域造诣深厚的教授。</li>
             </ul>
         </div>
         <div class="section" id="majors">
-            <h2>专业设置</h2>
+            <h2 id="majors-title">专业设置</h2>
             <ul>
-                <li><strong>蜥蜴生物学专业</strong>：着重研究蜥蜴的细胞结构、生理机能、遗传信息等，课程包括细胞生物学、分子遗传学、蜥蜴生理学等，培养学生在微观层面探索蜥蜴奥秘的能力。</li>
-                <li><strong>蜥蜴生态学专业</strong>：聚焦蜥蜴在生态系统中的角色、与其他生物的互动关系以及对环境变化的响应，开设生态系统生态学、保护生物学、蜥蜴生态监测等课程，为蜥蜴栖息地保护和生态平衡维护输送专业人才。</li>
-                <li><strong>蜥蜴行为学专业</strong>：深入探究蜥蜴的行为模式、行为动机以及行为与环境的关联，设置动物行为学、神经行为学、蜥蜴行为观察与分析等课程，帮助学生理解蜥蜴行为背后的复杂机制。</li>
+                <li><strong id="bio-major-title">蜥蜴生物学专业</strong>：着重研究蜥蜴的细胞结构、生理机能、遗传信息等。</li>
+                <li><strong id="eco-major-title">蜥蜴生态学专业</strong>：聚焦蜥蜴在生态系统中的角色、与其他生物的互动关系。</li>
+                <li><strong id="behavior-major-title">蜥蜴行为学专业</strong>：深入探究蜥蜴的行为模式、行为动机以及行为与环境的关联。</li>
             </ul>
         </div>
         <div class="section" id="research">
-            <h2>科研成果</h2>
-            <p>自建校以来，蜥蜴大学的科研团队在蜥蜴研究领域取得了众多突破性成果。在国际权威学术期刊上发表了大量高质量研究论文，揭示了蜥蜴进化的关键节点、独特的生态适应策略以及有趣的行为模式。此外，学校还承担了多项国家级和国际合作科研项目，研发出一系列针对蜥蜴保护和生态修复的创新技术与方法。</p>
+            <h2 id="research-title">科研成果</h2>
+            <p id="research-text">自建校以来，蜥蜴大学的科研团队在蜥蜴研究领域取得了众多突破性成果。</p>
         </div>
         <div class="section" id="admission">
-            <h2>招生信息</h2>
-            <p>蜥蜴大学每年面向全球招收优秀学子。本科招生要求申请者具备扎实的生物学基础、良好的科学素养和探索精神。研究生招生则注重学生的科研能力和创新思维，提供丰富的研究方向供学生选择。欢迎有志于蜥蜴研究的学生关注我校官网招生板块，了解详细招生信息和申请流程。</p>
+            <h2 id="admission-title">招生信息</h2>
+            <p id="admission-text">蜥蜴大学每年面向全球招收优秀学子，欢迎有志于蜥蜴研究的学生。</p>
         </div>
         <div class="section" id="contact">
-            <h2>联系我们</h2>
-            <p>地址：CE省OF市WuYa区煜晟路蜥蜴大学<br>电话：+132-5362-1575<br>邮箱：1801168420@qq.com</p>
+            <h2 id="contact-title">联系我们</h2>
+            <p id="contact-text">地址：CE省OF市WuYa区煜晟路蜥蜴大学<br>电话：+132-5362-1575<br>邮箱：1801168420@qq.com</p>
         </div>
     </div>
     <footer>
         &copy; 2024 蜥蜴大学版权所有 | <a href="https://123asdqweggg.github.io/CE-college/privacy.html" target="_blank">隐私声明</a>
     </footer>
+
+    <script>
+        // 切换语言的功能
+        const langButton = document.getElementById('toggle-lang');
+        
+        const translateText = {
+            zh: {
+                title: "蜥蜴大学",
+                description: "专注蜥蜴研究与教育的顶尖学府",
+                aboutTitle: "学校概况",
+                aboutText: "蜥蜴大学创立于1984年，作为全球蜥蜴研究与教育领域的翘楚，始终以探索蜥蜴奥秘、培育专业人才为使命。",
+                facultyTitle: "师资力量",
+                professorsTitle: "教授团队",
+                presidentTitle: "校长 - sun羊",
+                vpTitle: "行政副校长 - 白夜",
+                majorsTitle: "专业设置",
+                bioMajorTitle: "蜥蜴生物学专业",
+                ecoMajorTitle: "蜥蜴生态学专业",
+                behaviorMajorTitle: "蜥蜴行为学专业",
+                researchTitle: "科研成果",
+                researchText: "自建校以来，蜥蜴大学的科研团队在蜥蜴研究领域取得了众多突破性成果。",
+                admissionTitle: "招生信息",
+                admissionText: "蜥蜴大学每年面向全球招收优秀学子，欢迎有志于蜥蜴研究的学生。",
+                contactTitle: "联系我们",
+                contactText: "地址：CE省OF市WuYa区煜晟路蜥蜴大学<br>电话：+132-5362-1575<br>邮箱：1801168420@qq.com",
+                navAbout: "学校概况",
+                navFaculty: "师资力量",
+                navMajors: "专业设置",
+                navResearch: "科研成果",
+                navAdmission: "招生信息",
+                navContact: "联系我们",
+                privacyLink: "隐私声明"
+            },
+            en: {
+                title: "Lizard University",
+                description: "The top institution dedicated to lizard research and education.",
+                aboutTitle: "About Us",
+                aboutText: "Lizard University, founded in 1984, is a leading institution in the field of lizard research and education, dedicated to exploring the mysteries of lizards and cultivating professional talents.",
+                facultyTitle: "Faculty",
+                professorsTitle: "Professor Team",
+                presidentTitle: "President - Sun Yang",
+                vpTitle: "Vice President - Bai Ye",
+                majorsTitle: "Majors",
+                bioMajorTitle: "Lizard Biology",
+                ecoMajorTitle: "Lizard Ecology",
+                behaviorMajorTitle: "Lizard Behavior",
+                researchTitle: "Research Achievements",
+                researchText: "Since its establishment, Lizard University has made many groundbreaking achievements in lizard research.",
+                admissionTitle: "Admission Information",
+                admissionText: "Lizard University enrolls excellent students globally every year, welcoming those interested in lizard research.",
+                contactTitle: "Contact Us",
+                contactText: "Address: Lizard University, Yusheng Road, WuYa District, OF City, CE Province<br>Phone: +132-5362-1575<br>Email: 1801168420@qq.com",
+                navAbout: "About Us",
+                navFaculty: "Faculty",
+                navMajors: "Majors",
+                navResearch: "Research",
+                navAdmission: "Admission",
+                navContact: "Contact Us",
+                privacyLink: "Privacy Policy"
+            }
+        };
+
+        langButton.addEventListener('click', function () {
+            const currentLang = langButton.innerText === "EN" ? "en" : "zh";
+            langButton.innerText = currentLang === "en" ? "中文" : "EN";
+            updateLanguage(currentLang);
+        });
+
+        function updateLanguage(language) {
+            document.getElementById('site-title').innerText = translateText[language].title;
+            document.getElementById('site-description').innerText = translateText[language].description;
+            document.getElementById('about-title').innerText = translateText[language].aboutTitle;
+            document.getElementById('about-text').innerHTML = translateText[language].aboutText;
+            document.getElementById('faculty-title').innerText = translateText[language].facultyTitle;
+            document.getElementById('professors-title').innerText = translateText[language].professorsTitle;
+            document.getElementById('president-title').innerText = translateText[language].presidentTitle;
+            document.getElementById('vp-title').innerText = translateText[language].vpTitle;
+            document.getElementById('majors-title').innerText = translateText[language].majorsTitle;
+            document.getElementById('bio-major-title').innerText = translateText[language].bioMajorTitle;
+            document.getElementById('eco-major-title').innerText = translateText[language].ecoMajorTitle;
+            document.getElementById('behavior-major-title').innerText = translateText[language].behaviorMajorTitle;
+            document.getElementById('research-title').innerText = translateText[language].researchTitle;
+            document.getElementById('research-text').innerHTML = translateText[language].researchText;
+            document.getElementById('admission-title').innerText = translateText[language].admissionTitle;
+            document.getElementById('admission-text').innerHTML = translateText[language].admissionText;
+            document.getElementById('contact-title').innerText = translateText[language].contactTitle;
+            document.getElementById('contact-text').innerHTML = translateText[language].contactText;
+            document.getElementById('nav-about').innerText = translateText[language].navAbout;
+            document.getElementById('nav-faculty').innerText = translateText[language].navFaculty;
+            document.getElementById('nav-majors').innerText = translateText[language].navMajors;
+            document.getElementById('nav-research').innerText = translateText[language].navResearch;
+            document.getElementById('nav-admission').innerText = translateText[language].navAdmission;
+            document.getElementById('nav-contact').innerText = translateText[language].navContact;
+            document.querySelector('footer a').innerText = translateText[language].privacyLink;
+        }
+    </script>
 </body>
 
 </html>
