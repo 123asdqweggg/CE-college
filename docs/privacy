@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私声明 - 蜥蜴大学</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>蜥蜴大学隐私声明</h1>
+    </header>
+
+    <div class="content">
+        <h2>一、收集的个人信息</h2>
+        <p>蜥蜴大学致力于保护您的隐私。我们可能会收集以下类型的个人信息：</p>
+        <ul>
+            <li>姓名、联系方式（例如电子邮件地址、电话等）；</li>
+            <li>通过网站或其他途径提交的任何个人资料或信息；</li>
+            <li>在申请、注册、访问我们网站等过程中自动收集的数据，如IP地址、浏览器类型等。</li>
+        </ul>
+
+        <h2>二、使用个人信息的目的</h2>
+        <p>我们收集您的个人信息是为了以下目的：</p>
+        <ul>
+            <li>提供与蜥蜴大学相关的服务，包括信息更新、通知、活动邀请等；</li>
+            <li>改进网站功能和服务体验；</li>
+            <li>遵守法律法规的要求。</li>
+        </ul>
+
+        <h2>三、如何保护您的个人信息</h2>
+        <p>蜥蜴大学采取合理的安全措施保护您的个人信息，避免未经授权的访问、使用或泄露。我们将尽最大努力确保您的信息安全，但请注意，没有任何方法能确保信息完全安全。</p>
+
+        <h2>四、信息的共享与披露</h2>
+        <p>我们不会将您的个人信息出售、出租或租借给第三方。我们可能会在以下情况下披露您的信息：</p>
+        <ul>
+            <li>应法律、法规的要求或政府机关的指令；</li>
+            <li>为了保护蜥蜴大学、用户及公众的合法权益。</li>
+        </ul>
+
+        <h2>五、第三方网站的链接</h2>
+        <p>我们的网站可能包含指向第三方网站的链接。我们无法控制这些网站的隐私政策和内容，因此无法为其行为负责。我们建议您查看这些网站的隐私政策。</p>
+
+        <h2>六、更新隐私声明</h2>
+        <p>我们可能会不时更新此隐私声明，以反映我们的隐私实践变化。更新后的隐私声明将发布在此页面，并更新生效日期。</p>
+
+        <h2>七、联系我们</h2>
+        <p>如果您对本隐私声明有任何疑问或需要进一步了解如何处理您的个人信息，欢迎联系我们：</p>
+        <p>地址：CE省OF市WuYa区煜晟路蜥蜴大学<br>电话：+132-5362-1575<br>邮箱：privacy@lizarduniversity.com</p>
+    </div>
+
+    <footer>
+        &copy; 2024 蜥蜴大学版权所有
+    </footer>
+</body>
+
+</html>
