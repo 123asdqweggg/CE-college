@@ -24,9 +24,9 @@
         }
 
         header img {
-            width: 50px; /* 设置图片的宽度 */
-            height: 50px; /* 设置图片的高度 */
-            margin-right: 20px; /* 图片与文字之间的间距 */
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
         }
 
         nav {
@@ -82,12 +82,20 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        #toggle-music {
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 14px 16px;
+            float: right;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="蜥蜴.png" alt="蜥蜴图标"> <!-- 插入蜥蜴图片 -->
+        <img src="蜥蜴.png" alt="蜥蜴图标">
         <h1 id="site-title">蜥蜴大学</h1>
         <p id="site-description">专注蜥蜴研究与教育的顶尖学府</p>
     </header>
@@ -99,7 +107,14 @@
         <a href="#admission" id="nav-admission">招生信息</a>
         <a href="#contact" id="nav-contact">联系我们</a>
         <a href="javascript:void(0);" id="toggle-lang" style="float: right; color: white; padding: 14px 16px;">EN</a>
+        <span id="toggle-music">🎵</span>
     </nav>
+
+    <audio id="background-music" autoplay loop>
+        <source src="Dream_It_Possible.flac" type="audio/flac">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
         <div class="section" id="about">
             <h2 id="about-title">学校概况</h2>
@@ -139,7 +154,6 @@
     </footer>
 
     <script>
-        // 切换语言的功能
         const langButton = document.getElementById('toggle-lang');
         
         const translateText = {
@@ -232,6 +246,19 @@
             document.getElementById('nav-contact').innerText = translateText[language].navContact;
             document.querySelector('footer a').innerText = translateText[language].privacyLink;
         }
+
+        const musicButton = document.getElementById('toggle-music');
+        const music = document.getElementById('background-music');
+        let isPlaying = true;
+
+        musicButton.addEventListener('click', function () {
+            if (isPlaying) {
+                music.pause();
+            } else {
+                music.play();
+            }
+            isPlaying = !isPlaying;
+        });
     </script>
 </body>
 
