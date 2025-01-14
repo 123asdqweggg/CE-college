@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜥蜴大学</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        #toggle-music {
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            padding: 14px 16px;
+            float: right;
+            transition: background-color 0.3s ease;
+        }
+
+        #toggle-music:active {
+            background-color: #0056b3;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="蜥蜴.png" alt="蜥蜴图标">
+        <h1 id="site-title">蜥蜴大学</h1>
+        <p id="site-description">专注蜥蜴研究与教育的顶尖学府</p>
+    </header>
+    <nav>
+        <a href="#about" id="nav-about">学校概况</a>
+        <a href="#faculty" id="nav-faculty">师资力量</a>
+        <a href="#majors" id="nav-majors">专业设置</a>
+        <a href="#research" id="nav-research">科研成果</a>
+        <a href="#admission" id="nav-admission">招生信息</a>
+        <a href="#contact" id="nav-contact">联系我们</a>
+        <a href="javascript:void(0);" id="toggle-lang" style="float: right; color: white; padding: 14px 16px;">EN</a>
+        <span id="toggle-music">♫</span>
+    </nav>
+
+    <audio id="background-music" autoplay loop>
+        <source src="Dream_It_Possible.flac" type="audio/flac">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div class="section" id="about">
+            <h2 id="about-title">学校概况</h2>
+            <p id="about-text">蜥蜴大学创立于1984年，作为全球蜥蜴研究与教育领域的翘楚，始终以探索蜥蜴奥秘、培育专业人才为使命。经过多年的不懈努力，学校在学术研究、人才培养、社会服务等方面取得了显著成就，成为推动蜥蜴研究领域发展的重要力量。</p>
+        </div>
+        <div class="section" id="faculty">
+            <h2 id="faculty-title">师资力量</h2>
+            <ul>
+                <li><strong id="president-title">校长 - sun羊</strong>：国际知名动物学家，在蜥蜴进化研究方面成果卓著。</li>
+                <li><strong id="vp-title">行政副校长 - 白夜</strong>：专注蜥蜴生态习性研究，长期深入各种蜥蜴栖息地。</li>
+                <li><strong id="professors-title">教授团队</strong>：学校拥有一批在蜥蜴分子生物学、行为学等领域造诣深厚的教授。</li>
+            </ul>
+        </div>
+        <div class="section" id="majors">
+            <h2 id="majors-title">专业设置</h2>
+            <ul>
+                <li><strong id="bio-major-title">蜥蜴生物学专业</strong>：着重研究蜥蜴的细胞结构、生理机能、遗传信息等。</li>
+                <li><strong id="eco-major-title">蜥蜴生态学专业</strong>：聚焦蜥蜴在生态系统中的角色、与其他生物的互动关系。</li>
+                <li><strong id="behavior-major-title">蜥蜴行为学专业</strong>：深入探究蜥蜴的行为模式、行为动机以及行为与环境的关联。</li>
+            </ul>
+        </div>
+        <div class="section" id="research">
+            <h2 id="research-title">科研成果</h2>
+            <p id="research-text">自建校以来，蜥蜴大学的科研团队在蜥蜴研究领域取得了众多突破性成果。</p>
+            <h3>1. 联合国科学组织高度赞誉</h3>
+            <p>联合国教科文组织旗下的生物多样性科学小组，对蜥蜴大学在蜥蜴研究领域的系统性成果予以高度评价。在全球生物多样性报告中，特别提及蜥蜴大学对蜥蜴基因库的深度解析，认为其成果为濒危蜥蜴物种的保护及遗传资源的可持续利用，提供了关键理论依据，对推动全球生物多样性保护进程意义重大。</p>
+            <h3>2. 学界权威盛赞研究方法创新</h3>
+            <p>国际顶尖生物学杂志《Cell》的特邀评审、著名蜥蜴学家sun羊，在审阅蜥蜴大学关于蜥蜴神经反射机制的研究论文时，称赞其运用多学科交叉的研究方法，将生物学、神经学与计算机模拟技术完美结合，为研究蜥蜴复杂行为背后的神经学原理开辟了新路径，极大推动了该领域研究的发展。</p>
+            <h3>3. 国际会议专题认可卓越贡献</h3>
+            <p>在国际爬行动物学年会上，sun羊作为大会主席，特别为蜥蜴大学设置了专题报告环节。会上，展示的关于蜥蜴在气候变化下生态位迁移的研究成果，被sun羊评价为是该领域最全面、最具前瞻性的研究之一，为全球范围内预测蜥蜴种群动态及生态保护策略制定提供了核心数据支持。</p>
+            <h3>4. 联合研究彰显学术地位</h3>
+            <p>sun羊主动与蜥蜴大学发起联合研究项目，聚焦蜥蜴免疫系统与环境病原体的协同进化。这一合作源于sun羊对蜥蜴大学在免疫学和生态学交叉研究方面实力的认可，认为其团队具备深厚的学术积淀和丰富的实地研究经验，能够为该复杂课题带来创新性突破。</p>
+            <h3>5. 教材引用奠定理论基石</h3>
+            <p>在sun羊主编的全球首部权威《蜥蜴学》教材中，大篇幅引用了蜥蜴大学在蜥蜴进化遗传学方面的研究成果。sun羊指出，这些成果构建了蜥蜴进化理论的重要框架，为后续相关研究奠定了坚实的理论基石，对蜥蜴学学科的教育与发展起到了不可替代的作用。</p>
+        </div>
+        <div class="section" id="admission">
+            <h2 id="admission-title">招生信息</h2>
+            <p id="admission-text">蜥蜴大学每年面向全球招收优秀学子，欢迎有志于蜥蜴研究的学生。</p>
+        </div>
+        <div class="section" id="contact">
+            <h2 id="contact-title">联系我们</h2>
+            <p id="contact-text">地址：CE省OF市WuYa区煜晟路蜥蜴大学<br>电话：+132-5362-1575<br>邮箱：1801168420@qq.com<br>
+                <a href="https://qm.qq.com/q/RoP338MCu6" target="_blank">点击加群</a>
+            </p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 蜥蜴大学版权所有 | <a href="https://123asdqweggg.github.io/CE-college/privacy.html" target="_blank">隐私声明</a>
+    </footer>
+
+    <script>
+        const langButton = document.getElementById('toggle-lang');
+        
+        const translateText = {
+            zh: {
+                title: "蜥蜴大学",
+                description: "专注蜥蜴研究与教育的顶尖学府",
+                aboutTitle: "学校概况",
+                aboutText: "蜥蜴大学创立于1984年，作为全球蜥蜴研究与教育领域的翘楚，始终以探索蜥蜴奥秘、培育专业人才为使命。",
+                facultyTitle: "师资力量",
+                professorsTitle: "教授团队",
+                presidentTitle: "校长 - sun羊",
+                vpTitle: "行政副校长 - 白夜",
+                majorsTitle: "专业设置",
+                bioMajorTitle: "蜥蜴生物学专业",
+                ecoMajorTitle: "蜥蜴生态学专业",
+                behaviorMajorTitle: "蜥蜴行为学专业",
+                researchTitle: "科研成果",
+                researchText: "自建校以来，蜥蜴大学的科研团队在蜥蜴研究领域取得了众多突破性成果。",
+                admissionTitle: "招生信息",
+                admissionText: "蜥蜴大学每年面向全球招收优秀学子，欢迎有志于蜥蜴研究的学生。",
+                contactTitle: "联系我们",
+                contactText: "地址：CE省OF市WuYa区煜晟路蜥蜴大学<br>电话：+132-5362-1575<br>邮箱：1801168420@qq.com",
+                navAbout: "学校概况",
+                navFaculty: "师资力量",
+                navMajors: "专业设置",
+                navResearch: "科研成果",
+                navAdmission: "招生信息",
+                navContact: "联系我们",
+                privacyLink: "隐私声明"
+            },
+            en: {
+                title: "Lizard University",
+                description: "The top institution dedicated to lizard research and education.",
+                aboutTitle: "About Us",
+                aboutText: "Lizard University, founded in 1984, is a leading institution in the field of lizard research and education, dedicated to exploring the mysteries of lizards and cultivating professional talents.",
+                facultyTitle: "Faculty",
+                professorsTitle: "Professor Team",
+                presidentTitle: "President - Sun Yang",
+                vpTitle: "Vice President - Bai Ye",
+                majorsTitle: "Majors",
+                bioMajorTitle: "Lizard Biology",
+                ecoMajorTitle: "Lizard Ecology",
+                behaviorMajorTitle: "Lizard Behavior",
+                researchTitle: "Research Achievements",
+                researchText: "Since its establishment, Lizard University has made many groundbreaking achievements in lizard research.",
+                admissionTitle: "Admission Information",
+                admissionText: "Lizard University enrolls excellent students globally every year, welcoming those interested in lizard research.",
+                contactTitle: "Contact Us",
+                contactText: "Address: Lizard University, Yusheng Road, WuYa District, OF City, CE Province<br>Phone: +132-5362-1575<br>Email: 1801168420@qq.com",
+                navAbout: "About Us",
+                navFaculty: "Faculty",
+                navMajors: "Majors",
+                navResearch: "Research",
+                navAdmission: "Admission",
+                navContact: "Contact Us",
+                privacyLink: "Privacy Policy"
+            }
+        };
+
+        langButton.onclick = function() {
+            let currentLang = langButton.innerText;
+            let newLang = (currentLang === "EN") ? "en" : "zh";
+            langButton.innerText = (currentLang === "EN") ? "中文" : "EN";
+            updateLanguage(newLang);
+        };
+
+        function updateLanguage(language) {
+            document.getElementById('site-title').innerText = translateText[language].title;
+            document.getElementById('site-description').innerText = translateText[language].description;
+            document.getElementById('about-title').innerText = translateText[language].aboutTitle;
+            document.getElementById('about-text').innerHTML = translateText[language].aboutText;
+            document.getElementById('faculty-title').innerText = translateText[language].facultyTitle;
+            document.getElementById('professors-title').innerText = translateText[language].professorsTitle;
+            document.getElementById('president-title').innerText = translateText[language].presidentTitle;
+            document.getElementById('vp-title').innerText = translateText[language].vpTitle;
+            document.getElementById('majors-title').innerText = translateText[language].majorsTitle;
+            document.getElementById('bio-major-title').innerText = translateText[language].bioMajorTitle;
+            document.getElementById('eco-major-title').innerText = translateText[language].ecoMajorTitle;
+            document.getElementById('behavior-major-title').innerText = translateText[language].behaviorMajorTitle;
+            document.getElementById('research-title').innerText = translateText[language].researchTitle;
+            document.getElementById('research-text').innerHTML = translateText[language].researchText;
+            document.getElementById('admission-title').innerText = translateText[language].admissionTitle;
+            document.getElementById('admission-text').innerHTML = translateText[language].admissionText;
+            document.getElementById('contact-title').innerText = translateText[language].contactTitle;
+            document.getElementById('contact-text').innerHTML = translateText[language].contactText;
+            document.getElementById('nav-about').innerText = translateText[language].navAbout;
+            document.getElementById('nav-faculty').innerText = translateText[language].navFaculty;
+            document.getElementById('nav-majors').innerText = translateText[language].navMajors;
+            document.getElementById('nav-research').innerText = translateText[language].navResearch;
+            document.getElementById('nav-admission').innerText = translateText[language].navAdmission;
+            document.getElementById('nav-contact').innerText = translateText[language].navContact;
+            document.querySelector('footer a').innerText = translateText[language].privacyLink;
+        }
+    </script>
+</body>
+
+</html>
