@@ -145,6 +145,16 @@
         <div class="section" id="research">
             <h2 id="research-title">科研成果</h2>
             <p id="research-text">自建校以来，蜥蜴大学的科研团队在蜥蜴研究领域取得了众多突破性成果。</p>
+            <h3>1. 联合国科学组织高度赞誉</h3>
+            <p>联合国教科文组织旗下的生物多样性科学小组，对蜥蜴大学在蜥蜴研究领域的系统性成果予以高度评价。在全球生物多样性报告中，特别提及蜥蜴大学对蜥蜴基因库的深度解析，认为其成果为濒危蜥蜴物种的保护及遗传资源的可持续利用，提供了关键理论依据，对推动全球生物多样性保护进程意义重大。</p>
+            <h3>2. 学界权威盛赞研究方法创新</h3>
+            <p>国际顶尖生物学杂志《Cell》的特邀评审、著名蜥蜴学家sun羊，在审阅蜥蜴大学关于蜥蜴神经反射机制的研究论文时，称赞其运用多学科交叉的研究方法，将生物学、神经学与计算机模拟技术完美结合，为研究蜥蜴复杂行为背后的神经学原理开辟了新路径，极大推动了该领域研究的发展。</p>
+            <h3>3. 国际会议专题认可卓越贡献</h3>
+            <p>在国际爬行动物学年会上，sun羊作为大会主席，特别为蜥蜴大学设置了专题报告环节。会上，展示的关于蜥蜴在气候变化下生态位迁移的研究成果，被sun羊评价为是该领域最全面、最具前瞻性的研究之一，为全球范围内预测蜥蜴种群动态及生态保护策略制定提供了核心数据支持。</p>
+            <h3>4. 联合研究彰显学术地位</h3>
+            <p>sun羊主动与蜥蜴大学发起联合研究项目，聚焦蜥蜴免疫系统与环境病原体的协同进化。这一合作源于sun羊对蜥蜴大学在免疫学和生态学交叉研究方面实力的认可，认为其团队具备深厚的学术积淀和丰富的实地研究经验，能够为该复杂课题带来创新性突破。</p>
+            <h3>5. 教材引用奠定理论基石</h3>
+            <p>在sun羊主编的全球首部权威《蜥蜴学》教材中，大篇幅引用了蜥蜴大学在蜥蜴进化遗传学方面的研究成果。sun羊指出，这些成果构建了蜥蜴进化理论的重要框架，为后续相关研究奠定了坚实的理论基石，对蜥蜴学学科的教育与发展起到了不可替代的作用。</p>
         </div>
         <div class="section" id="admission">
             <h2 id="admission-title">招生信息</h2>
@@ -221,11 +231,12 @@
             }
         };
 
-        langButton.addEventListener('click', function () {
-            const currentLang = langButton.innerText === "EN" ? "en" : "zh";
-            langButton.innerText = currentLang === "en" ? "中文" : "EN";
-            updateLanguage(currentLang);
-        });
+        langButton.onclick = function() {
+            let currentLang = langButton.innerText;
+            let newLang = (currentLang === "EN") ? "en" : "zh";
+            langButton.innerText = (currentLang === "EN") ? "中文" : "EN";
+            updateLanguage(newLang);
+        };
 
         function updateLanguage(language) {
             document.getElementById('site-title').innerText = translateText[language].title;
@@ -254,19 +265,6 @@
             document.getElementById('nav-contact').innerText = translateText[language].navContact;
             document.querySelector('footer a').innerText = translateText[language].privacyLink;
         }
-
-        const musicButton = document.getElementById('toggle-music');
-        const music = document.getElementById('background-music');
-        let isPlaying = true;
-
-        musicButton.addEventListener('click', function () {
-            if (isPlaying) {
-                music.pause();
-            } else {
-                music.play();
-            }
-            isPlaying = !isPlaying;
-        });
     </script>
 </body>
 
